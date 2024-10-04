@@ -30,6 +30,11 @@
     color: white;
 }
 
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
 div {
     display: inline-block;
     width: 100%;
@@ -95,4 +100,23 @@ li a:hover {
 
 .scrollable-content::-webkit-scrollbar {
     display: none;
+}
+
+@media (max-width: 800px) {
+    ul {
+        display: none;
+    }
+    .navLogo {
+        max-width: 75%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 24px;
+    }
+    .section1 p,
+    .section2 p {
+        font-size: 20px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
